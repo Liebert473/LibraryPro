@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+button{
+  border: none;
+  background:none;
+  cursor: pointer;
+}
+
+:root{
+  --big: 24px;
+  --md: 18px;
+  --sm: 16px;
+  --xsm: 14px;
+  --lgray: #f9faf8;
+  --bgray: #d7d7d7;
+  --gradient: linear-gradient(90deg, #ffc8df, #b9b8e3);
+}
+
+.app {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid var(--bgray);
+  max-width: 800px;
+  background-color: var(--lgray);
+}
+
+.header{
+  display: flex;
+  background-color: white;
+  color: black;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: var(--big);
+  font-weight: bold;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header img{
+  height: 35px;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 30px;
+}
+
+.input-bar{
+  display: flex;
+  gap: 10px;
+}
+
+.input-bar input{
+  outline-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid var(--bgray);
+  font-size: var(--xsm);
+  flex: 1;
+}
+
+.add-tag{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  font-size: var(--xsm);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.topic {
+  display: flex;
+  font-size: var(--sm);
+  gap: 20px;
+  align-items: center;
+}
+
+.topics ul li{
+  margin-top: 15px;
+}
+
+.topics h2{
+  font-size: var(--big);
+  font-weight: bold;
+}
+
+.banner{
+  background:var(--gradient);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.banner-content h3{
+  font-size: var(--big);
+  font-weight: bold;
+}
+
+.banner-content p{
+  color: white;
+  font-size: var(--sm);
+}
+
+.generate{
+  font-size: var(--xsm);
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.output *{
+  line-height: 2;
+  margin-top: 5px;
+}
+
+@media (max-width : 620px) {
+  .banner{
+      flex-direction: column;
+  }
+  .banner-content{
+      align-items: center;
+  }
+  .body{
+    padding: 60px 20px;
+  }
+}
