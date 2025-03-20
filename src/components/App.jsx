@@ -12,7 +12,7 @@ const getAIResponse = async (message) => {
     return result.response.text();
   } catch (error) {
     console.error("Error fetching AI response:", error);
-    return "Sorry, something went wrong!";
+    return "Sorry, something went wrong! Try using VPN.";
   }
 };
 
